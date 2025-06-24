@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Celebration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Welcome! 🎉</h1>
+        <form id="userForm">
+            <label>
+                Gender:
+                <select name="gender" required>
+                    <option value="">Select</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="nonbinary">Non-binary</option>
+                    <option value="prefernot">Prefer not to say</option>
+                </select>
+            </label>
+            <label>
+                Favorite Color:
+                <input type="color" name="favoriteColor" required>
+            </label>
+            <label>
+                Age:
+                <input type="number" name="age" min="1" max="120" required>
+            </label>
+            <label>
+                Birthday:
+                <input type="date" name="birthday" required>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="celebration" class="hidden">
+            <h2>🎂 Happy Birthday! 🎂</h2>
+            <div class="cakes">
+                <img src="https://img.icons8.com/color/96/000000/birthday-cake.png" alt="Cake">
+                <img src="https://img.icons8.com/color/96/000000/birthday-cake.png" alt="Cake">
+            </div>
+            <canvas id="confetti"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
